@@ -14,6 +14,18 @@ public abstract class Personagem {
         this.pontosDeVida = pontosDeVida;
         this.poderBase = poderBase;
     }
+    // Métodos Getters necessários para a lógica de combate 
+    public String getNome() {
+        return this.nome;
+    }
+
+    public int getNivel() {
+        return this.nivel;
+    }
+
+    public double getPoderBase() {
+        return this.poderBase;
+    }
 
     //Abstrato
     public abstract void usarHabilidadeEspecial();
