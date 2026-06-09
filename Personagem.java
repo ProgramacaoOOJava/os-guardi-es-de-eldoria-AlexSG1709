@@ -1,10 +1,12 @@
 public class Personagem {
+    //Atributos
     String nome;
     String classe;
     int nivel;
     int pontosDeVida;
     double poderBase;
 
+    //Construocao
     public Personagem(String nome, String classe, int nivel, int pontosDeVida, double poderBase) {
         this.nome = nome;
         this.classe = classe;
@@ -13,6 +15,10 @@ public class Personagem {
         this.poderBase = poderBase;
     }
 
+    //Abstrato
+    public abstract void usarHabilidadeEspecial();
+
+    //Informacao dos status
     public void exibirStatus() {
         System.out.println("--- Status do Personagem ---");
         System.out.println("Nome: " + this.nome);
